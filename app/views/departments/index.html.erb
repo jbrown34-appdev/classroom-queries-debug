@@ -6,6 +6,8 @@
   </div>
 </div>
 
+
+
 <hr>
 <div class="row mb-3">
   <div class="col-md-12">
@@ -23,7 +25,8 @@
         </th>
       </tr>
 
-      <% @list_of_department.each do |department| %>
+
+      <% @list_of_departments.each do |department| %>
       <tr>
         <td>
           <%= department.id %>
@@ -32,9 +35,9 @@
         <td>
           <%= department.name %>
         </td>
-
+    
         <td>
-          <a href="/departments/<%= department.id %>">
+          <a href="/deparments/<%= department.id %>">
             Show details
           </a>
         </td>
@@ -43,5 +46,4 @@
     </table>
   </div>
 </div>
-
-<hr>
+  

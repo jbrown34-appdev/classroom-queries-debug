@@ -1,12 +1,12 @@
-<div class="row mb-3">
+ <div class="row mb-3">
   <div class="col-md-8 offset-md-2">
     <h1>
-      Student #<%= @the_student.id %> details
+      Student #315 details
     </h1>
 
     <div class="row mb-3">
       <div class="col">
-        <a href="/students">
+        <a href="/students" class="btn btn-block btn-outline-secondary">
           Go back
         </a>
       </div>
@@ -17,21 +17,21 @@
         First name
       </dt>
       <dd>
-        <%= @the_student.first_name %>
-      </dd>
+        ! <%= #@the_student.first_name %>
+        </dd>
 
       <dt>
         Last name
       </dt>
       <dd>
-        <%= @the_student.last_name %>
+        <%= #@the_student.last_name %>
       </dd>
 
       <dt>
         Email
       </dt>
       <dd>
-        <%= @the_student.email %>
+        <%= #@the_student.email %>
       </dd>
 
       <dt>
