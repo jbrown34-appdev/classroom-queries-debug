@@ -1,7 +1,7 @@
  <div class="row mb-3">
   <div class="col-md-8 offset-md-2">
     <h1>
-      Student #315 details
+      Student #<%= @the_student.id %> details
     </h1>
 
     <div class="row mb-3">
@@ -12,26 +12,27 @@
       </div>
     </div>
 
+    
     <dl>
       <dt>
         First name
       </dt>
       <dd>
-        ! <%= #@the_student.first_name %>
-        </dd>
+        <%= @the_student.first_name %>
+      </dd>
 
       <dt>
         Last name
       </dt>
       <dd>
-        <%= #@the_student.last_name %>
+        <%= @the_student.last_name %>
       </dd>
 
       <dt>
         Email
       </dt>
       <dd>
-        <%= #@the_student.email %>
+        <%= @the_student.email %>
       </dd>
 
       <dt>
